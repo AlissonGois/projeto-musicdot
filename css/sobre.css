@@ -27,3 +27,26 @@ figure{
 figcaption{
     margin-top: 10px;
 }
+
+.matriz{
+    width: 550px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*.matriz img{
+    width: inherit;
+}*/
+
+.familia{
+    width: 275px;
+    float: right;
+}
+
+/*.familia img{
+    width: inherit;
+}*/
+
+figure img{
+    width: 100%;
+}
