@@ -4,12 +4,15 @@
         
         <!--Declarando a linguagem e acentuação da página-->
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
         <!--Estabelecendo o nome da aba do navegador da minha página-->
         <title>MusicDot | Sobre a empresa</title>
         <!--Incluindo um icone junto com o nome da aba da minha página do navegador-->
         <link href="img/favicon.ico" rel="Icon"/>
         <!--Estabelecendo a conexão com o documento CSS -->
         <link rel="stylesheet" href="/css/sobre.css"/>
+        <link rel="stylesheet" href="base.css" media="screen">
+<link rel="stylesheet" href="mobile.css" media="(max-width: 480px)">
         
 
     </head>
@@ -87,28 +90,40 @@
 
         <h2 class="titulo">Contato</h2>
 
-        <h3 class="contato__subtitulo">Correspondência</h3>
-        <small> (todos os dias, das 9h às 18h) </small>
+        <div class="contato__secao">
+            <h3 class="contato__subtitulo">Correspondência</h3>
+            <small> (todos os dias, das 9h às 18h) </small>
 
-        <address class="contato__info">
-            AOVS Sistemas de Informática S.A
-            <br>
-            Rua Vergueiro, 3185, 8º andar
-            <br>
-            Vila Mariana
-            <br>
-            São Paulo - SP
-        </address>
+            <address class="contato__info">
+                AOVS Sistemas de Informática S.A
+                <br>
+                Rua Vergueiro, 3185, 8º andar
+                <br>
+                Vila Mariana
+                <br>
+                São Paulo - SP
+            </address>
+        </div>
+        <div id="contato" class="contato_secao contato__secao--telefone">
+            <h3 class="contato__subtitulo"> Telefones </h3>
+            <small> (segunda à sexta, das 9h às 18h) </small>
 
-        <h3 class="contato__subtitulo"> Telefones </h3>
-        <small> (segunda à sexta, das 9h às 18h) </small>
+            <dl class="contato__info">
+                <div>
+                    <dt class="contato__info-titulo"> Pessoa Física: </dt>
+                    <dd class="contato__info-descricao"> <a href="tel://114118-3319"> (11) 4118-3319 </a> </dd>
+                </div>
+                <div>
+                    <dt class="contato__info-titulo"> Pessoa Jurídica: </dt>
+                    <dd class="contato__info-descricao"> <a href="tel://114118-2172"> (11) 4118-2172 </a> </dd>
+                </div>
+            </dl>
+        </div>
 
-        <dl class="contato__info">
-          <dt> Pessoa Física: </dt>
-          <dd> <a href="tel://114118-3319"> (11) 4118-3319 </a> </dd>
-        
-          <dt> Pessoa Jurídica: </dt>
-          <dd> <a href="tel://114118-2172"> (11) 4118-2172 </a> </dd>
-        </dl>
+        <footer class="rodape">
+            <img src="img/logo.svg" alt="Logo da MusicDot" class="rodape__logo"/>
+            <p class="rodape__copyright"> &copy; Copyright MusicDot</p>
+        </footer>
+
     </body>
 </html>
